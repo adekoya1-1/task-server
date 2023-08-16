@@ -8,10 +8,10 @@ const Homepage = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div className='container'>
         <div>
           <div className="d-lg-flex justify-content-around align-items-center">
-            <div className="home-manage">
+            <div className="home-manage" style={{width: "300px  "}}>
               <h3>
                 Manage your Tasks on <br />{" "}
                 <span className="duty">TaskDuty</span>
@@ -23,7 +23,7 @@ const Homepage = () => {
                 bibendum mi nisl semper porttitor. Nec accumsan.
               </p>
               <Link to="/all" className="text-decoration-none">
-                <button>Go to My Tasks</button>
+                <button className=''>Go to My Tasks</button>
               </Link>
             </div>
             <div className="home-img">

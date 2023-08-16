@@ -1,9 +1,9 @@
-import React, { useState, useEffect} from 'react'
-import Task from '../components/Task'
-import Loading from '../components/Loading'
-import TaskHeader from '../components/TaskHeader'
-import { useFetch } from '../hooks/useFetch'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import Task from "../components/Task";
+import Loading from "../components/Loading";
+import TaskHeader from "../components/TaskHeader";
+import { useFetch } from "../hooks/useFetch";
+import { Link } from "react-router-dom";
 
 const Mytask = () => {
   const {
@@ -12,7 +12,7 @@ const Mytask = () => {
   } = useFetch("https://taskapp-zrf3.onrender.com/api/task");
   return (
     <div>
-      <TaskHeader />
+      <TaskHeader id="top" />
       {isLoading && <Loading />}
       <div className=" container d-flex justify-content-between align-items-center mt-5">
         <div>
@@ -28,11 +28,21 @@ const Mytask = () => {
       <div>
         {Tasks &&
           Tasks.map((t) => {
-            return <Task key={t._id} {...t} />;
+            return (
+              <div>
+                <Task key={t._id} {...t} />;
+                
+              </div>
+              
+            );
           })}
+        <div className="d-flex justify-content-center align-items-center mt-5">
+                  <a href="#top"><p className="back">Back to Top</p></a>
+                    
+                </div>
       </div>
     </div>
   );
-}
+};
 
-export default Mytask
+export default Mytask;

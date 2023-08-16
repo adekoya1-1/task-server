@@ -18,7 +18,7 @@ function App() {
           <Route path="/update/:taskId" element={<Update />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router>
+        </Router>
     </>
   );
 }

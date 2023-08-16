@@ -17,7 +17,7 @@ const TaskHeader = () => {
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
+          <Navbar.Collapse id="navbarScroll" className='d-md-flex justify-content-between'>
             <div className="ms-auto my-2 my-lg-0 d-flex">
               <div className="mt-3 me-3 ">
                 <Nav className="m-auto my-2 my-lg-0" navbarScroll>

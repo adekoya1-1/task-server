@@ -71,3 +71,8 @@
     width: 100px;
  }
 }
+@media(min-width: 360px){
+    .edit-btn{
+        margin-left: 20px;
+    }
+}

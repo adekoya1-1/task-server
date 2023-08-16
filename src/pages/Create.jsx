@@ -38,7 +38,7 @@ const Create = () => {
   return (
     <div>
       <HeaderTwo />
-      <div className="container">
+      <div className="container px-5">
         <div>
           <h3>New Task</h3>
 
@@ -92,7 +92,7 @@ const Create = () => {
               </div>
 
               <div>
-                <button className="form-done mt-5">Done</button>
+                <button className="form-done mt-5 mb-5">Done</button>
               </div>
             </form>
           </div>

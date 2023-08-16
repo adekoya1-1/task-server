@@ -23,7 +23,7 @@ const Task = ({title, description, tags, _id}) => {
           <div className="mt-2 ps-2">
             <h4>{tags}</h4>
           </div>
-          <div className=" mt-4 pt-2 pe-2 mt-lg-0 d-flex gap-4">
+          <div className=" m- mt-4 pt-2 pe-2 mt-lg-0 d-flex gap-4">
             <Link to={`/update/${_id}`}>
               <button className="edit-btn">Edit</button>
             </Link>
@@ -40,11 +40,7 @@ const Task = ({title, description, tags, _id}) => {
         <h3 className="fw-bold text-capitalize p-2">{title}</h3>
         <p className='p-2'>{description}</p>
       </div>
-      <div className='d-flex justify-content-center align-items-center mt-5'>
-        <Link to="/all" className='text-decoration-none'>
-        <p className='back'>Back to Top</p>
-        </Link>
-      </div>
+     
     </div>
   );
 }
